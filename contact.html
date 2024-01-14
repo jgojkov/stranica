@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Josip Gojković">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSwFjPQHBNBu1aYqCJAa73U2Qu7LM7fAA&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            
+            var location = { lat: 45.79613017695015, lng: 16.018370368790016 };
+            
+            
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            
+            
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Porsche Centar Zagreb'
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="models.html">Models</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="aboutus.html">About</a>
+    </nav>
+
+    <section>
+        <form>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="cancel">Cancel</button>
+        </form>
+
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; Josip Gojković. All rights reserved.<a href="https://github.com/jgojkov/projekt"><img src="Slike/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></p>
+    </footer>
+
+    <script>
+        function redirectToContact() {
+            window.location.href = 'contact.html'; 
+        }
+    </script>
+</body>
+</html>

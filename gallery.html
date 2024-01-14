@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Josip Gojković">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porsche Page</title>
+    <link rel="stylesheet" href="gallery.css"> 
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <div class="location">
+            <button id="location-tag" onclick="redirectToContact()">Porsche Centar Zagreb</button>
+            <span id="gps-pin">📍</span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="models.html">Models</a>
+        <a href="aboutus.html">About</a>
+    </nav>
+
+    <div>
+        <h2>Why Choose Porsche?</h2>
+    </div>
+
+    <section>
+        <div class="video-container">
+            
+        </div> 
+    </section>
+
+    <section>
+        <div class="video-container">
+            <video width="100%" height="100%" controls><source src="Video/A drive like no other – the Porsche 911 GT3.mp4"></video>
+        </div>
+        <div class="video-container">
+            <video width="100%" height="100%" controls><source src="Video/Feel the road – the Porsche Cayman GT4 RS.mp4"></video>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; Josip Gojković. All rights reserved.<a href="https://github.com/jgojkov/projekt"><img src="Slike/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></p>
+    </footer>
+
+    <script>
+        function redirectToContact() {
+            window.location.href = 'contact.html'; 
+        }
+    </script>
+</body>
+</html>

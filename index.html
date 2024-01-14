@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Josip Gojković">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porsche Page</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <header>
+        <h1>PORSCHE</h1>
+        <div class="location">
+            <button id="location-tag" onclick="redirectToContact()">Porsche Centar Zagreb</button><span id="gps-pin">📍</span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="models.html">Models</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="aboutus.html">About</a>
+    </nav>
+
+    <section>
+        <div id="typewriter-container">
+            <p id="typewriter-text">"I couldn't find the sports car of my dreams, so I built it myself."<br>-<i> Ferdinand Porsche</i></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; Josip Gojković. All rights reserved.<a href="https://github.com/jgojkov/projekt"><img src="Slike/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></p>
+    </footer>
+
+    <script>
+        function redirectToContact() {
+            window.location.href = 'contact.html'; 
+        }
+
+        const textElement = document.getElementById('Typewriter-text');
+        const text = 'Tekst.';
+        let index = 0;
+
+        function type() {
+            textElement.innerHTML += text[index];
+            index++;
+            if (index < text.length) {
+                setTimeout(type, 50)
+            }
+        }
+
+        type();
+    </script>
+</body>
+</html>
+
